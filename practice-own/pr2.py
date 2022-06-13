@@ -41,7 +41,7 @@ class Employee:
         self.salary = salary
         self.email = first_name + '.' + last_name + '@company.com'
 
-        Employee.num_of_emps += 1
+        Employee.num_of_emps += 1 #this variable made this way cause if we want add new employees later
 
     def fullname(self):
         return '{} {}'.format(self.first_name, self.last_name)

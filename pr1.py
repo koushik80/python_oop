@@ -12,8 +12,8 @@ class Employee:
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
 
-print(emp_1)
-print(emp_2)
+#print(emp_1)
+#print(emp_2)
 
 #emp_1.first_name = 'Koushik'
 #emp_1.last_name = 'Dey'
@@ -27,3 +27,6 @@ print(emp_2)
 
 print(emp_1.email)
 print(emp_2.email)
+
+print('{} {}'.format(emp_1.first_name, emp_1.last_name))
+print('{} {}'.format(emp_2.first_name, emp_2.last_name))

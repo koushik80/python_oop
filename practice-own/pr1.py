@@ -1,5 +1,5 @@
 #https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
-
+#Lesson-1 : How to create and use classes within Python
 class Employee:
 
     def __init__(self, first_name, last_name, salary):
@@ -31,8 +31,11 @@ emp_2 = Employee('Rajon', 'Dey', 60000)
 print(emp_1.email)
 print(emp_2.email)
 
-print(emp_1.fullname())
-print(emp_2.fullname())
+#print(emp_1.fullname())
+#print(emp_2.fullname())
+
+#emp_2.fullname()
+#Employee.fullname(emp_1)
 
 #print('{} {}'.format(emp_1.first_name, emp_1.last_name))
 #print('{} {}'.format(emp_2.first_name, emp_2.last_name))

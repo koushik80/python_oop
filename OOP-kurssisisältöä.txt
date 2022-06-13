@@ -1,0 +1,16 @@
+1) Luokan luominen, olion luominen -perusteet
+2) Luokan muuttujat (10.6)
+3) Luokan metodit
+4) Staattiset metodit
+5) SRP (Single Responsibility Principle)
+6) Luokkien Periminen
+
+7) Sovelletaan oppimista pelillisesti. 
+(Tehdään simppeli peli,jossa hyödynnetään olio-ohjelmointia)
+ - game-luokka (luokkaan tulee vain pelin käynnistyminen, sulkeminen,jne.)
+ - ship-luokka (luokkaan tulee vain shipille kuuluvia metodeita)
+ - gem-luokka (voidaan tehdä monta oliota)
+ - settings-luokka (ainoastaan pelin asetuksia)
+ - highscore-luokka (tässä hyödynnetään mongoa)
+ ->tehdään pelistä standalone-versio
+

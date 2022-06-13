@@ -23,10 +23,19 @@ class Employee:
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
 
+#print(Employee.__dict__)
 
 #emp_1.apply_raise()
-#print(Employee.raise_amount) #**same
-#print(emp_1.raise_amount) #**same
-#print(emp_2.raise_amount)
+
+#Employee.raise_amount = 1.05
+
+
+emp_1.raise_amount = 1.05 #** it will change emp_1 salary
+print(emp_1.__dict__)  #** it will show now only emp_1's details with raise
+
+
+print(Employee.raise_amount) #**same
+print(emp_1.raise_amount) #**same
+print(emp_2.raise_amount)
 
 #emp_1.raise_amount

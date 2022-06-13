@@ -4,6 +4,8 @@
 
 class Employee:
 
+    raise_amount = 1.04
+
     def __init__(self, first_name, last_name, salary):
         self.first_name = first_name
         self.last_name = last_name
@@ -15,12 +17,16 @@ class Employee:
 
 
     def apply_raise(self):
-        self.salary = int(self.salary * 1.04)
+        self.salary = int(self.salary * self.raise_amount)
 
 
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
 
-print(emp_1.salary)
-emp_1.apply_raise()
-print(emp_1.salary)
+
+#emp_1.apply_raise()
+#print(Employee.raise_amount) #**same
+#print(emp_1.raise_amount) #**same
+#print(emp_2.raise_amount)
+
+#emp_1.raise_amount

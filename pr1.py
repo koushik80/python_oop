@@ -8,6 +8,9 @@ class Employee:
         self.salary = salary
         self.email = first_name + '.' + last_name + '@company.com'
 
+    def fullname(self):
+        return '{} {}'.format(self.first_name, self.last_name)
+
 
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
@@ -28,5 +31,8 @@ emp_2 = Employee('Rajon', 'Dey', 60000)
 print(emp_1.email)
 print(emp_2.email)
 
-print('{} {}'.format(emp_1.first_name, emp_1.last_name))
-print('{} {}'.format(emp_2.first_name, emp_2.last_name))
+print(emp_1.fullname())
+print(emp_2.fullname())
+
+#print('{} {}'.format(emp_1.first_name, emp_1.last_name))
+#print('{} {}'.format(emp_2.first_name, emp_2.last_name))

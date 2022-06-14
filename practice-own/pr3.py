@@ -9,7 +9,7 @@
 #Start:
 
 class Employee:
-    
+
     num_of_emps = 0
     raise_amount = 1.04
 
@@ -31,12 +31,34 @@ class Employee:
     @classmethod
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
-        
+
 
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
 
+#Employee.set_raise_amount(1.05)
 
-print(Employee.raise_amount) #**same
-print(emp_1.raise_amount) #**same
-print(emp_2.raise_amount)
+#print(Employee.raise_amount) #**same
+#print(emp_1.raise_amount) #**same
+#print(emp_2.raise_amount)
+
+emp_str_1 = 'John-Doe-70000'
+emp_str_2 = 'Steve-Smith-30000'
+emp_str_3 = 'Jane-Doe-90000'
+
+first_name, last_name, salary = emp_str_1.split('-')
+first_name, last_name, salary = emp_str_2.split('-')
+first_name, last_name, salary = emp_str_3.split('-')
+
+new_emp_1 = Employee(first_name, last_name, salary)
+#new_emp_1 = Employee.from_string(emp_str_1)
+
+new_emp_2 = Employee(first_name, last_name, salary)
+#new_emp_2 = Employee.from_string(emp_str_2)
+
+new_emp_3 = Employee(first_name, last_name, salary)
+#new_emp_3 = Employee.from_string(emp_str_3)
+
+print(new_emp_1.email)
+print(new_emp_2.email)
+print(new_emp_3.email)

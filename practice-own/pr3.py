@@ -32,6 +32,10 @@ class Employee:
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
 
+    @classmethod
+    def from_string(cls, emp_str):
+        first_name, last_name, salary = emp_str.split('-')
+        return cls(first_name, last_name, salary)
 
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
@@ -50,14 +54,14 @@ first_name, last_name, salary = emp_str_1.split('-')
 first_name, last_name, salary = emp_str_2.split('-')
 first_name, last_name, salary = emp_str_3.split('-')
 
-new_emp_1 = Employee(first_name, last_name, salary)
-#new_emp_1 = Employee.from_string(emp_str_1)
+#new_emp_1 = Employee(first_name, last_name, salary)
+new_emp_1 = Employee.from_string(emp_str_1)
 
-new_emp_2 = Employee(first_name, last_name, salary)
-#new_emp_2 = Employee.from_string(emp_str_2)
+#new_emp_2 = Employee(first_name, last_name, salary)
+new_emp_2 = Employee.from_string(emp_str_2)
 
-new_emp_3 = Employee(first_name, last_name, salary)
-#new_emp_3 = Employee.from_string(emp_str_3)
+#new_emp_3 = Employee(first_name, last_name, salary)
+new_emp_3 = Employee.from_string(emp_str_3)
 
 print(new_emp_1.email)
 print(new_emp_2.email)

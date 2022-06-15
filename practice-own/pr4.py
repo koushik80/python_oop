@@ -34,9 +34,15 @@ class Employee:
 
     @staticmethod
     def is_workday(day):
-        if day.weekday() == 5 or  day.weekday() == 6:
+        if day.weekday() == 5 or day.weekday() == 6:
             return False
         return True
 
 emp_1 = Employee('Koushik', 'Dey', 50000)
 emp_2 = Employee('Rajon', 'Dey', 60000)
+
+import datetime
+
+my_date = datetime.date(2022, 6, 19)
+
+print(Employee.is_workday(my_date))

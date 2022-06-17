@@ -19,22 +19,21 @@ class BookStore:
     def __init__(self):
         self.books = {}
 
-def add_book(self, name, price):
-    self.books[name] = price
+    def add_book(self, name, price):
+        self.books[name] = price
 
-def remove_book(self, name):
-    #del self.books[name].pop()
-    self.bookspop(name)
+    def remove_book(self, name):
+        #del self.books[name].pop()
+        self.bookspop(name)
 
-def print_books(self):
-    print(self.books)
-    
+    def print_books(self):
+        print(self.books)
+        
   
     
 bs = BookStore()
+#bs.print_books()
+bs.add_book('anaconda', '50')
 bs.print_books()
-bs.add_book()
-bs.print_books()
-bs.print_books()
-bs.remove_book()
-bs.print_books()
+#bs.remove_book('panda', '60')
+#bs.print_books()
